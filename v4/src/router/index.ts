@@ -36,6 +36,32 @@ const formDesignRouteConfig: RouteRecordRaw = {
       path: 'renderView',
       name: 'ComponentFormDesignRenderView',
       component: () => import('@/views/form-design/renderView/CodeExample.vue')
+    },
+    {
+      path: 'template',
+      component: RouteLayout,
+      children: [
+        {
+          path: 'title',
+          name: 'ComponentFormDesignTemplateTitle',
+          component: () => import('@/views/form-design/template/title/CodeExample.vue')
+        },
+        {
+          path: 'titlePrefix',
+          name: 'ComponentFormDesignTemplateTitlePrefix',
+          component: () => import('@/views/form-design/template/titlePrefix/CodeExample.vue')
+        },
+        {
+          path: 'titleSuffix',
+          name: 'ComponentFormDesignTemplateTitleSuffix',
+          component: () => import('@/views/form-design/template/titleSuffix/CodeExample.vue')
+        },
+        {
+          path: 'header',
+          name: 'ComponentFormDesignTemplateHeader',
+          component: () => import('@/views/form-design/template/header/CodeExample.vue')
+        }
+      ]
     }
   ]
 }
