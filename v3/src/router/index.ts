@@ -108,6 +108,16 @@ const routes: Array<RouteConfig> = [
         component: () => import('@/views/start/cdn/CodeExample.vue')
       },
       {
+        path: 'useUI',
+        component: RouteLayout,
+        children: [
+          { path: 'install', name: 'StartUIInstall', component: () => import('@/views/start/useUI/install/CodeExample.vue') },
+          { path: 'useGlobal', name: 'StartUIUseGlobal', component: () => import('@/views/start/useUI/useGlobal/CodeExample.vue') },
+          { path: 'useImport', name: 'StartUIUseImport', component: () => import('@/views/start/useUI/useImport/CodeExample.vue') },
+          { path: 'cdn', name: 'StartUICDN', component: () => import('@/views/start/useUI/cdn/CodeExample.vue') }
+        ]
+      },
+      {
         path: 'globalConfig',
         name: 'StartConfig',
         component: () => import('@/views/start/config/CodeExample.vue')
