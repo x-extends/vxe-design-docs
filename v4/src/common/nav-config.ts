@@ -1,3 +1,5 @@
+import XEUtils from 'xe-utils'
+
 export interface NavVO {
   title?: string
   name?: string
@@ -115,6 +117,12 @@ const designNavConfig: NavVO & { children: NavVO[] } = {
     // { title: 'PrintDesign 打印设计器' },
   ]
 }
+
+XEUtils.eachTree(designNavConfig.children.slice(0, 1), (item, index, items, path, parent, nodes) => {
+  if (nodes.length <= 2) {
+    item.isExpand = true
+  }
+})
 
 export const navConfigList: NavVO[] = [
   {

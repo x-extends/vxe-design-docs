@@ -350,6 +350,43 @@ const routes: Array<RouteRecordRaw> = [
         component: RouteLayout,
         children: [
           {
+            path: 'button',
+            component: RouteLayout,
+            children: [
+              {
+                path: 'api',
+                name: 'GlobalRendererButtonAPI',
+                component: () => import('@/views/global/renderer/button/api/CodeExample.vue')
+              },
+              {
+                path: 'prefix',
+                name: 'GlobalRendererButtonPrefix',
+                component: () => import('@/views/global/renderer/button/prefix/CodeExample.vue')
+              },
+              {
+                path: 'suffix',
+                name: 'GlobalRendererButtonSuffix',
+                component: () => import('@/views/global/renderer/button/suffix/CodeExample.vue')
+              }
+            ]
+          },
+          {
+            path: 'icon-picker',
+            component: RouteLayout,
+            children: [
+              {
+                path: 'api',
+                name: 'GlobalRendererIconPickerAPI',
+                component: () => import('@/views/global/renderer/icon-picker/api/CodeExample.vue')
+              },
+              {
+                path: 'icon',
+                name: 'GlobalRendererIconPickerIcon',
+                component: () => import('@/views/global/renderer/icon-picker/icon/CodeExample.vue')
+              }
+            ]
+          },
+          {
             path: 'form',
             component: RouteLayout,
             children: [
@@ -540,6 +577,16 @@ const routes: Array<RouteRecordRaw> = [
                     path: 'myDatePickerWidget',
                     name: 'GlobalRendererFormDesignWidgetMyDatePickerWidget',
                     component: () => import('@/views/global/renderer/form-design/widget/myDatePickerWidget/CodeExample.vue')
+                  },
+                  {
+                    path: 'myNumberInputWidget',
+                    name: 'GlobalRendererFormDesignWidgetMyNumberInputWidget',
+                    component: () => import('@/views/global/renderer/form-design/widget/myNumberInputWidget/CodeExample.vue')
+                  },
+                  {
+                    path: 'myAmountInputWidget',
+                    name: 'GlobalRendererFormDesignWidgetMyAmountInputWidget',
+                    component: () => import('@/views/global/renderer/form-design/widget/myAmountInputWidget/CodeExample.vue')
                   },
                   {
                     path: 'myUploadFileWidget',
