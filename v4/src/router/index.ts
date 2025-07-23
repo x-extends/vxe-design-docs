@@ -1,5 +1,8 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
+import { formDesignRouteConfig } from './form-design'
+import { listDesignRouteConfig } from './list-design'
+
 import RouteLayout from '@/components/RouteLayout.vue'
 import PageLayout from '@/components/PageLayout.vue'
 
@@ -7,91 +10,6 @@ import StartInstall from '@/views/start/install/CodeExample.vue'
 import FreeDonation from '@/views/start/FreeDonation.vue'
 import JoinSponsor from '@/views/start/JoinSponsor.vue'
 import EnterprisePreview from '@/views/start/EnterprisePreview.vue'
-
-const formDesignRouteConfig: RouteRecordRaw = {
-  path: 'form-design',
-  component: RouteLayout,
-  children: [
-    {
-      path: 'base',
-      name: 'ComponentFormDesignBase',
-      component: () => import('@/views/form-design/base/CodeExample.vue')
-    },
-    {
-      path: 'customGroup',
-      name: 'ComponentFormDesignCustomGroup',
-      component: () => import('@/views/form-design/customGroup/CodeExample.vue')
-    },
-    {
-      path: 'mobile',
-      name: 'ComponentFormDesignMobile',
-      component: () => import('@/views/form-design/mobile/CodeExample.vue')
-    },
-    {
-      path: 'pcAndMobile',
-      name: 'ComponentFormDesignPcAndMobile',
-      component: () => import('@/views/form-design/pcAndMobile/CodeExample.vue')
-    },
-    {
-      path: 'renderView',
-      name: 'ComponentFormDesignRenderView',
-      component: () => import('@/views/form-design/renderView/CodeExample.vue')
-    },
-    {
-      path: 'template',
-      component: RouteLayout,
-      children: [
-        {
-          path: 'title',
-          name: 'ComponentFormDesignTemplateTitle',
-          component: () => import('@/views/form-design/template/title/CodeExample.vue')
-        },
-        {
-          path: 'titlePrefix',
-          name: 'ComponentFormDesignTemplateTitlePrefix',
-          component: () => import('@/views/form-design/template/titlePrefix/CodeExample.vue')
-        },
-        {
-          path: 'titleSuffix',
-          name: 'ComponentFormDesignTemplateTitleSuffix',
-          component: () => import('@/views/form-design/template/titleSuffix/CodeExample.vue')
-        },
-        {
-          path: 'header',
-          name: 'ComponentFormDesignTemplateHeader',
-          component: () => import('@/views/form-design/template/header/CodeExample.vue')
-        }
-      ]
-    }
-  ]
-}
-
-const listDesignRouteConfig: RouteRecordRaw = {
-  path: 'list-design',
-  component: RouteLayout,
-  children: [
-    {
-      path: 'base',
-      name: 'ComponentListDesignBase',
-      component: () => import('@/views/list-design/base/CodeExample.vue')
-    },
-    {
-      path: 'mobile',
-      name: 'ComponentListDesignMobile',
-      component: () => import('@/views/list-design/mobile/CodeExample.vue')
-    },
-    {
-      path: 'pcAndMobile',
-      name: 'ComponentListDesignPcAndMobile',
-      component: () => import('@/views/list-design/pcAndMobile/CodeExample.vue')
-    },
-    {
-      path: 'formAndList',
-      name: 'ComponentListDesignFormAndList',
-      component: () => import('@/views/list-design/formAndList/CodeExample.vue')
-    }
-  ]
-}
 
 const routes: Array<RouteRecordRaw> = [
   {
