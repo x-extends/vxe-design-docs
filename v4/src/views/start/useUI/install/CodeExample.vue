@@ -46,8 +46,8 @@
 
     <CodeLight>
       <template #tip>
-        <vxe-tip status="primary" title="设计器模板示例">
-          <div>支持任意扩展，自定义控件的可视化设计器模板 <vxe-link href="https://github.com/x-extends/vxe-design-template" target="_blank"><vxe-icon name="github-fill"></vxe-icon>vxe-design-template</vxe-link>、<vxe-link href="https://gitee.com/x-extends/vxe-design-template" target="_blank"><vxe-icon name="gitee-fill" status="error"></vxe-icon>vxe-design-template</vxe-link>，<vxe-link href="https://vxeui.com/design-template/" target="_blank" status="primary">点击在线预览</vxe-link></div>
+        <vxe-tip status="primary" title="框架模板示例">
+          <div>极致精简、流畅的框架模板 <vxe-link href="https://github.com/x-extends/vxe-admin-template" target="_blank"><vxe-icon name="github-fill"></vxe-icon>vxe-admin-template</vxe-link>、<vxe-link href="https://gitee.com/x-extends/vxe-admin-template" target="_blank"><vxe-icon name="gitee-fill" status="error"></vxe-icon>vxe-admin-template</vxe-link>，<vxe-link href="https://vxeui.com/admin-template/" target="_blank" status="primary">点击在线预览</vxe-link></div>
         </vxe-tip>
       </template>
 
@@ -56,16 +56,16 @@
           <pre-code
             language="shell"
             :content="`
-            git clone https://gitee.com/x-extends/vxe-design-template.git
+            git clone https://gitee.com/x-extends/vxe-admin-template.git
             # 或者
-            git clone https://github.com/x-extends/vxe-design-template.git
+            git clone https://github.com/x-extends/vxe-admin-template.git
             `">
           </pre-code>
           <pre-code
             language="shell"
             content="
             # 切换目录
-            cd vxe-design-template
+            cd vxe-admin-template
 
             # 更新依赖
             npm run update

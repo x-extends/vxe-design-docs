@@ -9,31 +9,29 @@
       </template>
 
       <template #use>
-        <vxe-tip status="success" title="安装表格组件">
-          搭配强大的表格组件可以实现可视化表格列、列表渲染视图
+        <vxe-tip status="success" title="仅安装表格">
+          仅可使用表格基础功能，不包含任何 UI 组件，不能使用任何高级功能，建议使用第三方 UI 组件库自行实现。
         </vxe-tip>
         <pre>
           <pre-code
             language="shell"
             :content="`
-            npm install ${ designCDNLib } ${tableCDNLib}
+            npm install ${ tableCDNLib }
             # 或者
-            yarn add ${ designCDNLib } ${tableCDNLib}
+            yarn add ${ tableCDNLib }
             # 或者
-            pnpm add ${ designCDNLib } ${tableCDNLib}
+            pnpm add ${ tableCDNLib }
             `">
           </pre-code>
           <pre-code
             language="javascript"
             content="
             // ...
-            import VxeUIDesign from 'vxe-design'
-            import 'vxe-design/lib/style.css'
             import VxeUITable from 'vxe-table'
             import 'vxe-table/lib/style.css'
             // ...
 
-            createApp(App).use(VxeUIDesign).use(VxeUITable).mount('#app')
+            createApp(App).use(VxeUITable).mount('#app')
             // ...">
           </pre-code>
         </pre>
@@ -47,7 +45,5 @@ import { computed } from 'vue'
 import { useAppStore } from '@/store/app'
 
 const appStore = useAppStore()
-const uiCDNLib = computed(() => appStore.uiCDNLib)
 const tableCDNLib = computed(() => appStore.tableCDNLib)
-const designCDNLib = computed(() => appStore.designCDNLib)
 </script>

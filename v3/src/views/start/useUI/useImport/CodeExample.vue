@@ -65,15 +65,15 @@
               VxeCollapsePane,
               VxeColorPicker,
               VxeCountdown,
-              VxeDatePanel,
               VxeDatePicker,
-              VxeDateRangePicker,
               VxeDrawer,
               VxeEmpty,
               VxeForm,
+              VxeFormDesign,
               VxeFormGather,
               VxeFormGroup,
               VxeFormItem,
+              VxeFormView,
               VxeIcon,
               VxeIconPicker,
               VxeImage,
@@ -86,6 +86,8 @@
               VxeLayoutFooter,
               VxeLayoutHeader,
               VxeLink,
+              VxeListDesign,
+              VxeListView,
               VxeList,
               VxeLoading,
               VxeMenu,
@@ -106,8 +108,6 @@
               VxeResult,
               VxeRow,
               VxeSelect,
-              VxeSplit,
-              VxeSplitPane,
               VxeSlider,
               VxeSteps,
               VxeSwitch,
@@ -134,19 +134,9 @@
               VxeToolbar
             } from 'vxe-table'
 
-            import {
-              VxeFlowDesign,
-              VxeFlowView,
-              VxeFormDesign,
-              VxeFormView,
-              VxeListDesign,
-              VxeListView,
-            } from 'vxe-design'
-
             // 导入主题变量，也可以重写主题变量
-            import 'vxe-pc-ui/styles/cssvar.scss'
             import 'vxe-table/styles/cssvar.scss'
-            import 'vxe-design/styles/cssvar.scss'
+            import 'vxe-pc-ui/styles/cssvar.scss'
 
             // 导入默认的语言
             import zhCN from 'vxe-pc-ui/lib/language/zh-CN'
@@ -243,13 +233,6 @@
             VxeUI.component(VxeColgroup)
             VxeUI.component(VxeGrid)
             VxeUI.component(VxeToolbar)
-
-            VxeUI.component(VxeFlowDesign)
-            VxeUI.component(VxeFlowView)
-            VxeUI.component(VxeFormDesign)
-            VxeUI.component(VxeFormView)
-            VxeUI.component(VxeListDesign)
-            VxeUI.component(VxeListView)
           </pre-code>
         </pre>
       </template>
