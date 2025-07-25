@@ -6,6 +6,8 @@ import { listDesignRouteConfig } from './list-design'
 import RouteLayout from '@/components/RouteLayout.vue'
 import PageLayout from '@/components/PageLayout.vue'
 
+import StartUIInstall from '@/views/start/useUI/install/CodeExample.vue'
+import StartTableInstall from '@/views/start/useTable/install/CodeExample.vue'
 import StartDesignInstall from '@/views/start/useDesign/install/CodeExample.vue'
 import FreeDonation from '@/views/start/FreeDonation.vue'
 import JoinSponsor from '@/views/start/JoinSponsor.vue'
@@ -29,20 +31,10 @@ const routes: Array<RouteRecordRaw> = [
     component: PageLayout,
     children: [
       {
-        path: 'useDesign',
-        component: RouteLayout,
-        children: [
-          { path: 'install', name: 'StartDesignInstall', component: StartDesignInstall },
-          { path: 'useGlobal', name: 'StartDesignUseGlobal', component: () => import('@/views/start/useDesign/useGlobal/CodeExample.vue') },
-          { path: 'useImport', name: 'StartDesignUseImport', component: () => import('@/views/start/useDesign/useImport/CodeExample.vue') },
-          { path: 'cdn', name: 'StartDesignCDN', component: () => import('@/views/start/useDesign/cdn/CodeExample.vue') }
-        ]
-      },
-      {
         path: 'useUI',
         component: RouteLayout,
         children: [
-          { path: 'install', name: 'StartUIInstall', component: () => import('@/views/start/useUI/install/CodeExample.vue') },
+          { path: 'install', name: 'StartUIInstall', component: StartUIInstall },
           { path: 'useGlobal', name: 'StartUIUseGlobal', component: () => import('@/views/start/useUI/useGlobal/CodeExample.vue') },
           { path: 'useImport', name: 'StartUIUseImport', component: () => import('@/views/start/useUI/useImport/CodeExample.vue') },
           { path: 'cdn', name: 'StartUICDN', component: () => import('@/views/start/useUI/cdn/CodeExample.vue') }
@@ -52,7 +44,20 @@ const routes: Array<RouteRecordRaw> = [
         path: 'useTable',
         component: RouteLayout,
         children: [
-          { path: 'install', name: 'StartTableInstall', component: () => import('@/views/start/useTable/install/CodeExample.vue') }
+          { path: 'install', name: 'StartTableInstall', component: StartTableInstall },
+          { path: 'useGlobal', name: 'StartTableUseGlobal', component: () => import('@/views/start/useTable/useGlobal/CodeExample.vue') },
+          { path: 'useImport', name: 'StartTableUseImport', component: () => import('@/views/start/useTable/useImport/CodeExample.vue') },
+          { path: 'cdn', name: 'StartTableCDN', component: () => import('@/views/start/useTable/cdn/CodeExample.vue') }
+        ]
+      },
+      {
+        path: 'useDesign',
+        component: RouteLayout,
+        children: [
+          { path: 'install', name: 'StartDesignInstall', component: StartDesignInstall },
+          { path: 'useGlobal', name: 'StartDesignUseGlobal', component: () => import('@/views/start/useDesign/useGlobal/CodeExample.vue') },
+          { path: 'useImport', name: 'StartDesignUseImport', component: () => import('@/views/start/useDesign/useImport/CodeExample.vue') },
+          { path: 'cdn', name: 'StartDesignCDN', component: () => import('@/views/start/useDesign/cdn/CodeExample.vue') }
         ]
       },
       {
@@ -105,6 +110,17 @@ const routes: Array<RouteRecordRaw> = [
         path: 'preview/:previewCode',
         name: 'EnterprisePreview',
         component: EnterprisePreview
+      }
+    ]
+  },
+  {
+    path: '/tool',
+    component: PageLayout,
+    children: [
+      {
+        path: 'clipboard',
+        name: 'ToolClipboard',
+        component: () => import('@/views/tool/clipboard/CodeExample.vue')
       }
     ]
   },
