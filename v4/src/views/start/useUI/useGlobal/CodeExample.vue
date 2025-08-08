@@ -61,7 +61,8 @@
             // ...
             plugins: [
               ['import', { libraryName: 'vxe-pc-ui', style: true }, 'vxe-pc-ui'],
-              ['import', { libraryName: 'vxe-table', style: true }, 'vxe-table']
+              ['import', { libraryName: 'vxe-table', style: true }, 'vxe-table'],
+              ['import', { libraryName: 'vxe-design', style: true }, 'vxe-design']
             ]
             // ...
           </pre-code>
@@ -172,6 +173,15 @@
               VxeToolbar
             } from 'vxe-table'
 
+            import {
+              VxeFlowDesign,
+              VxeFlowView,
+              VxeFormDesign,
+              VxeFormView,
+              VxeListDesign,
+              VxeListView
+            } from 'vxe-design'
+
             // 导入主题变量，也可以重写主题变量
             import 'vxe-pc-ui/styles/cssvar.scss'
             import 'vxe-table/styles/cssvar.scss'
@@ -274,7 +284,16 @@
               app.use(VxeToolbar)
             }
 
-            createApp(App).use(lazyVxeUI).use(lazyVxeTable).mount('#app')
+            function lazyVxeDesign (app) {
+              app.use(VxeFlowDesign)
+              app.use(VxeFlowView)
+              app.use(VxeFormDesign)
+              app.use(VxeFormView)
+              app.use(VxeListDesign)
+              app.use(VxeListView)
+            }
+
+            createApp(App).use(lazyVxeUI).use(lazyVxeTable).use(lazyVxeDesign).mount('#app')
           </pre-code>
         </pre>
       </template>

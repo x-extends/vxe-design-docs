@@ -172,6 +172,15 @@
               VxeToolbar
             } from 'vxe-table'
 
+            import {
+              VxeFlowDesign,
+              VxeFlowView,
+              VxeFormDesign,
+              VxeFormView,
+              VxeListDesign,
+              VxeListView
+            } from 'vxe-design'
+
             // 导入主题变量，也可以重写主题变量
             import 'vxe-pc-ui/styles/cssvar.scss'
             import 'vxe-table/styles/cssvar.scss'
@@ -272,6 +281,13 @@
             VxeUI.component(VxeColgroup)
             VxeUI.component(VxeGrid)
             VxeUI.component(VxeToolbar)
+
+            VxeUI.component(VxeFlowDesign)
+            VxeUI.component(VxeFlowView)
+            VxeUI.component(VxeFormDesign)
+            VxeUI.component(VxeFormView)
+            VxeUI.component(VxeListDesign)
+            VxeUI.component(VxeListView)
           </pre-code>
         </pre>
       </template>

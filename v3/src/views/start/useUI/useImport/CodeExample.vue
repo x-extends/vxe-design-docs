@@ -22,7 +22,8 @@
             // ...
             plugins: [
               ['import', { libraryName: 'vxe-pc-ui', style: true }, 'vxe-pc-ui'],
-              ['import', { libraryName: 'vxe-table', style: true }, 'vxe-table']
+              ['import', { libraryName: 'vxe-table', style: true }, 'vxe-table'],
+              ['import', { libraryName: 'vxe-design', style: true }, 'vxe-design']
             ]
             // ...
           </pre-code>
@@ -133,9 +134,19 @@
               VxeToolbar
             } from 'vxe-table'
 
+            import {
+              VxeFlowDesign,
+              VxeFlowView,
+              VxeFormDesign,
+              VxeFormView,
+              VxeListDesign,
+              VxeListView
+            } from 'vxe-design'
+
             // 导入主题变量，也可以重写主题变量
-            import 'vxe-table/styles/cssvar.scss'
             import 'vxe-pc-ui/styles/cssvar.scss'
+            import 'vxe-table/styles/cssvar.scss'
+            import 'vxe-design/styles/cssvar.scss'
 
             // 导入默认的语言
             import zhCN from 'vxe-pc-ui/lib/language/zh-CN'
@@ -232,6 +243,13 @@
             VxeUI.component(VxeColgroup)
             VxeUI.component(VxeGrid)
             VxeUI.component(VxeToolbar)
+
+            VxeUI.component(VxeFlowDesign)
+            VxeUI.component(VxeFlowView)
+            VxeUI.component(VxeFormDesign)
+            VxeUI.component(VxeFormView)
+            VxeUI.component(VxeListDesign)
+            VxeUI.component(VxeListView)
           </pre-code>
         </pre>
       </template>
