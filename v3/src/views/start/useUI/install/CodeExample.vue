@@ -17,11 +17,11 @@
           <pre-code
             language="shell"
             :content="`
-              npm install ${uiCDNLib} ${tableCDNLib} ${designCDNLib}
+              npm install ${utilCDNLib} ${uiCDNLib} ${tableCDNLib} ${designCDNLib}
               # 或者
-              yarn add ${uiCDNLib} ${tableCDNLib} ${designCDNLib}
+              yarn add ${utilCDNLib} ${uiCDNLib} ${tableCDNLib} ${designCDNLib}
               # 或者
-              pnpm add ${uiCDNLib} ${tableCDNLib} ${designCDNLib}
+              pnpm add ${utilCDNLib} ${uiCDNLib} ${tableCDNLib} ${designCDNLib}
             `">
           </pre-code>
           <pre-code
@@ -87,6 +87,7 @@ import { mapGetters } from 'vuex'
 export default Vue.extend({
   computed: {
     ...mapGetters([
+      'utilCDNLib',
       'uiCDNLib',
       'tableCDNLib',
       'designCDNLib'
