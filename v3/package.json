@@ -24,7 +24,6 @@
     "vxe-table": "~3.19.49"
   },
   "devDependencies": {
-    "@types/node": "^22.9.0",
     "@typescript-eslint/eslint-plugin": "~6.21.0",
     "@typescript-eslint/parser": "~6.21.0",
     "@vue/cli-plugin-babel": "~5.0.0",
