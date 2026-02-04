@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "update": "pnpm i",
+    "update": "pnpm install",
     "update:v3": "cd v3 && npm run update",
     "update:v4": "cd v4 && npm run update",
     "update:all": "npm run update:v3 && npm run update:v4",
@@ -24,6 +24,6 @@
     "gulp-replace": "1.1.4",
     "gulp-zip": "5.1.0",
     "uglify-js": "3.17.4",
-    "xe-utils": "^3.9.0"
+    "xe-utils": "~3.9.1"
   }
 }
