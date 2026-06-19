@@ -75,7 +75,7 @@ export const navConfigList: NavVO[] = [
       { i18nKey: 'app.aside.menu.functions', linkUrl: 'https://util.vxeui.com' }
     ]
   },
-  ...designNavConfig.children,
+  ...(designNavConfig.children || []),
   {
     title: 'API',
     isExpand: true,
