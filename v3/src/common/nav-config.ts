@@ -2,7 +2,7 @@ import XEUtils from 'xe-utils'
 import { NavVO, otherUrl } from './nav'
 import { designNavConfig } from './design'
 
-XEUtils.eachTree(designNavConfig.children.slice(0, 1), (item, index, items, path, parent, nodes) => {
+XEUtils.eachTree(XEUtils.slice(designNavConfig.children, 0, 1), (item, index, items, path, parent, nodes) => {
   if (nodes.length <= 2) {
     item.isExpand = true
   }
