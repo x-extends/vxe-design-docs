@@ -18,13 +18,13 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/:pathMatch(.*)*',
     redirect: {
-      name: 'StartUIInstall'
+      name: 'StartDesignInstall'
     }
   },
   {
     path: '/',
     redirect: {
-      name: 'StartUIInstall'
+      name: 'StartDesignInstall'
     }
   },
   {

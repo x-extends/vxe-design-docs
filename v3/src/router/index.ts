@@ -21,13 +21,13 @@ const routes: Array<RouteConfig> = [
   {
     path: '*',
     redirect: {
-      name: 'StartUIInstall'
+      name: 'StartDesignInstall'
     }
   },
   {
     path: '/',
     redirect: {
-      name: 'StartUIInstall'
+      name: 'StartDesignInstall'
     }
   },
   {
