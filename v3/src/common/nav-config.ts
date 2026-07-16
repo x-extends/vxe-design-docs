@@ -11,6 +11,7 @@ XEUtils.eachTree(XEUtils.slice(designNavConfig.children, 0, 1), (item, index, it
 export const navConfigList: NavVO[] = [
   {
     i18nKey: 'app.aside.menu.guide',
+    icon: 'vxe-icon-rich-text',
     isExpand: true,
     children: [
       {
@@ -69,6 +70,7 @@ export const navConfigList: NavVO[] = [
   },
   {
     i18nKey: 'app.aside.menu.tools',
+    icon: 'vxe-icon-tools',
     children: [
       { i18nKey: 'app.aside.menu.clipboard', routerLink: { name: 'ToolClipboard' } },
       { i18nKey: 'app.aside.menu.functions', linkUrl: 'https://util.vxeui.com' }
