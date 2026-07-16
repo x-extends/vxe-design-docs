@@ -2,7 +2,7 @@ import XEUtils from 'xe-utils'
 import { NavVO, otherUrl } from './nav'
 import { designNavConfig } from './design'
 
-XEUtils.eachTree(XEUtils.slice(designNavConfig.children, 0, 1), (item, index, items, path, parent, nodes) => {
+XEUtils.eachTree(XEUtils.slice(designNavConfig.children, 0, 1), (item, index, items, path, parentItem, nodes) => {
   if (nodes.length <= 2) {
     item.isExpand = true
   }
@@ -79,6 +79,7 @@ export const navConfigList: NavVO[] = [
   ...(designNavConfig.children || []),
   {
     title: 'API',
+    icon: 'vxe-icon-doc-search',
     isExpand: true,
     children: []
   }
