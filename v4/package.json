@@ -19,7 +19,7 @@
     "vue-i18n": "~11.3.0",
     "vue-router": "^4.5.1",
     "vxe-design": "~4.1.6",
-    "vxe-pc-ui": "~4.17.5",
+    "vxe-pc-ui": "~4.17.6",
     "vxe-table": "~4.20.12",
     "xe-utils": "^4.0.11"
   },
@@ -51,6 +51,7 @@
     "vite": "~8.2.1",
     "vite-plugin-html": "~3.2.2",
     "vite-plugin-zip-pack": "~1.2.4",
+    "vue-eslint-parser": "^10.4.1",
     "vue-tsc": "~3.3.8"
   }
 }
