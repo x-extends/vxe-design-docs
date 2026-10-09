@@ -144,8 +144,8 @@
               VxeResult,
               VxeRow,
               VxeSelect,
-              VxeSplit,
-              VxeSplitPane,
+              VxeSplitter,
+              VxeSplitterPanel,
               VxeSlider,
               VxeSteps,
               VxeSwitch,
@@ -257,8 +257,8 @@
             VxeUI.component(VxeResult)
             VxeUI.component(VxeRow)
             VxeUI.component(VxeSelect)
-            VxeUI.component(VxeSplit)
-            VxeUI.component(VxeSplitPane)
+            VxeUI.component(VxeSplitter)
+            VxeUI.component(VxeSplitterPanel)
             VxeUI.component(VxeSlider)
             VxeUI.component(VxeSteps)
             VxeUI.component(VxeSwitch)
