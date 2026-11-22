@@ -1,9 +1,9 @@
 <template>
   <div>
-    <CodeLight path="form-design/customGroup/Demo1">
+    <CodeLight path="list-design/base/Demo1">
       <template #tip>
         <vxe-tip status="primary">
-          自定义左侧控件分组名称
+          零代码表单设计器，拖拉拽直接生成表单 JSON 数据
         </vxe-tip>
       </template>
     </CodeLight>
